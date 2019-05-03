@@ -4,12 +4,12 @@ import {ReceiverManager} from './receiver-manager';
 let receiverManager;
 
 /**
- * Kaltura Receiver Player SDK.
+ * Vidiun Receiver Player SDK.
  * @class Receiver
- * @param {KPReceiverOptionsObject} config - The receiver SDK configuration.
+ * @param {VPReceiverOptionsObject} config - The receiver SDK configuration.
  */
 class ReceiverManagerAPI {
-  constructor(config: KPReceiverOptionsObject) {
+  constructor(config: VPReceiverOptionsObject) {
     receiverManager = new ReceiverManager(config);
   }
 

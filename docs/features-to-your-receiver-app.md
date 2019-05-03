@@ -20,7 +20,7 @@ If you want to manipulate or change the data that is sent by the sender, you can
 <head>
   <meta charset="UTF-8">
   <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
-  <script src="//cdnapisec.kaltura.com/p/{YOUR_PARTNER_ID}/embedPlaykitJs/uiconf_id/{UI_CONF_ID}"></script>
+  <script src="//cdnapisec.vidiun.com/p/{YOUR_PARTNER_ID}/embedPakhshkitJs/uiconf_id/{UI_CONF_ID}"></script>
 </head>
 <body>
 <cast-media-player/>
@@ -32,8 +32,8 @@ var conf = {
   }
 };
   
-// Kaltura receiver player
-var receiver = new KalturaPlayer.cast.receiver.Receiver(conf);
+// Vidiun receiver player
+var receiver = new VidiunPlayer.cast.receiver.Receiver(conf);
 // Google cast player manager
 var playerManager = cast.framework.CastReceiverContext.getInstance().getPlayerManager();
   
@@ -68,7 +68,7 @@ receiver.start();
 <head>
   <meta charset="UTF-8">
   <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
-  <script src="//cdnapisec.kaltura.com/p/{YOUR_PARTNER_ID}/embedPlaykitJs/uiconf_id/{UI_CONF_ID}"></script>
+  <script src="//cdnapisec.vidiun.com/p/{YOUR_PARTNER_ID}/embedPakhshkitJs/uiconf_id/{UI_CONF_ID}"></script>
 </head>
 <body>
 <cast-media-player/>
@@ -80,8 +80,8 @@ var conf = {
   }
 };
   
-// Kaltura receiver player
-var receiver = new KalturaPlayer.cast.receiver.Receiver(conf);
+// Vidiun receiver player
+var receiver = new VidiunPlayer.cast.receiver.Receiver(conf);
 // Google cast player manager
 var playerManager = cast.framework.CastReceiverContext.getInstance().getPlayerManager();
   
@@ -107,7 +107,7 @@ receiver.start();
 
 ### Set Your Preferred Streaming Protocol
 
-The Kaltura Receiver SDK allows you to choose which streaming protocol you prefer to play. By default, the receiver will first attempt to play first with HLS, then with DASH, and finally mp4. If you wish to change this priority you can just configure this order differently as follows:
+The Vidiun Receiver SDK allows you to choose which streaming protocol you prefer to play. By default, the receiver will first attempt to play first with HLS, then with DASH, and finally mp4. If you wish to change this priority you can just configure this order differently as follows:
 
 ```html
 <!DOCTYPE html>
@@ -115,7 +115,7 @@ The Kaltura Receiver SDK allows you to choose which streaming protocol you prefe
 <head>
   <meta charset="UTF-8">
   <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
-  <script src="//cdnapisec.kaltura.com/p/{YOUR_PARTNER_ID}/embedPlaykitJs/uiconf_id/{UI_CONF_ID}"></script>
+  <script src="//cdnapisec.vidiun.com/p/{YOUR_PARTNER_ID}/embedPakhshkitJs/uiconf_id/{UI_CONF_ID}"></script>
 </head>
 <body>
 <cast-media-player/>
@@ -128,21 +128,21 @@ var conf = {
   playback: {
     streamPriority: [
       {
-        engine: KalturaPlayer.core.EngineType.CAST,
-        format: KalturaPlayer.core.StreamType.DASH
+        engine: VidiunPlayer.core.EngineType.CAST,
+        format: VidiunPlayer.core.StreamType.DASH
       },
       {
-        engine: KalturaPlayer.core.EngineType.CAST,
-        format: KalturaPlayer.core.StreamType.HLS
+        engine: VidiunPlayer.core.EngineType.CAST,
+        format: VidiunPlayer.core.StreamType.HLS
       },
       {
-        engine: KalturaPlayer.core.EngineType.CAST,
-        format: KalturaPlayer.core.StreamType.PROGRESSIVE
+        engine: VidiunPlayer.core.EngineType.CAST,
+        format: VidiunPlayer.core.StreamType.PROGRESSIVE
       }
     ]
   }
 };
-var receiver = new KalturaPlayer.cast.receiver.Receiver(conf);
+var receiver = new VidiunPlayer.cast.receiver.Receiver(conf);
 receiver.start();
 ```
 
@@ -150,7 +150,7 @@ receiver.start();
 
 ### Redirect Your Streams
 
-If you're hosting your streams on a third party and not on Kaltura's platform, you'll need the receiver to handle the redirecting logic. To do so, configure it to force redirect to external streams as follows:
+If you're hosting your streams on a third party and not on Vidiun's platform, you'll need the receiver to handle the redirecting logic. To do so, configure it to force redirect to external streams as follows:
 
 ```html
 <!DOCTYPE html>
@@ -158,7 +158,7 @@ If you're hosting your streams on a third party and not on Kaltura's platform, y
 <head>
   <meta charset="UTF-8">
   <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
-  <script src="//cdnapisec.kaltura.com/p/{YOUR_PARTNER_ID}/embedPlaykitJs/uiconf_id/{UI_CONF_ID}"></script>
+  <script src="//cdnapisec.vidiun.com/p/{YOUR_PARTNER_ID}/embedPakhshkitJs/uiconf_id/{UI_CONF_ID}"></script>
 </head>
 <body>
 <cast-media-player/>
@@ -174,7 +174,7 @@ var conf = {
     }
   }
 };
-var receiver = new KalturaPlayer.cast.receiver.Receiver(conf);
+var receiver = new VidiunPlayer.cast.receiver.Receiver(conf);
 receiver.start();
 ```
 
@@ -188,7 +188,7 @@ To display your own custom splash image in the receiver, you can override the bu
 <head>
   <meta charset="UTF-8">
   <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
-  <script src="//cdnapisec.kaltura.com/p/{YOUR_PARTNER_ID}/embedPlaykitJs/uiconf_id/{UI_CONF_ID}"></script>
+  <script src="//cdnapisec.vidiun.com/p/{YOUR_PARTNER_ID}/embedPakhshkitJs/uiconf_id/{UI_CONF_ID}"></script>
   <style>
   #player {
     --splash-image: url('http://some/image.png');
@@ -204,7 +204,7 @@ var conf = {
     uiConfId: {UI_CONF_ID} // receiver type
   }
 };
-var receiver = new KalturaPlayer.cast.receiver.Receiver(conf);
+var receiver = new VidiunPlayer.cast.receiver.Receiver(conf);
 receiver.start();
 ```
 

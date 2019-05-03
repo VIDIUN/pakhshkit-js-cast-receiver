@@ -1,5 +1,5 @@
 // @flow
-import {cast as remote, core} from 'kaltura-player-js';
+import {cast as remote, core} from 'vidiun-player-js';
 
 const {TextStyleConverter} = remote;
 const {TrackType, getLogger} = core;
