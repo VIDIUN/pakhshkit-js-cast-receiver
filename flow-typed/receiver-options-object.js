@@ -1,7 +1,7 @@
 // @flow
 
 /**
- * @typedef {Object} KPReceiverOptionsObject
+ * @typedef {Object} VPReceiverOptionsObject
  * @property {ProviderOptionsObject} provider - The provider configuration.
  * @property {Object} [playback] - The playback configuration.
  * @property {Array<PKStreamPriorityObject>} [playback.streamPriority] - The list of engine and stream format pairs of the player by ascending order.
@@ -35,7 +35,7 @@
  *  }
  *}
  */
-type _KPReceiverOptionsObject = {
+type _VPReceiverOptionsObject = {
   provider: ProviderOptionsObject,
   playback?: {
     streamPriority: Array<PKStreamPriorityObject>
@@ -47,18 +47,18 @@ type _KPReceiverOptionsObject = {
 };
 
 /**
- * See {@link https://github.com/kaltura/playkit-js-providers/blob/master/docs/configuration.md#configuration-structure|ProviderOptionsObject}
+ * See {@link https://github.com/vidiun/pakhshkit-js-providers/blob/master/docs/configuration.md#configuration-structure|ProviderOptionsObject}
  * @external  ProviderOptionsObject
  */
 
 /**
- * See {@link https://github.com/kaltura/playkit-js/blob/master/docs/configuration.md#type-arraypkstreampriorityobject|PKStreamPriorityObject}
+ * See {@link https://github.com/vidiun/pakhshkit-js/blob/master/docs/configuration.md#type-arraypkstreampriorityobject|PKStreamPriorityObject}
  * @external PKStreamPriorityObject
  */
 
 /**
- * See {@link https://github.com/kaltura/playkit-js/blob/master/docs/configuration.md#type-pkmediasourceoptionsobject|PKMediaSourceOptionsObject}
+ * See {@link https://github.com/vidiun/pakhshkit-js/blob/master/docs/configuration.md#type-pkmediasourceoptionsobject|PKMediaSourceOptionsObject}
  * @external PKMediaSourceOptionsObject
  */
 
-declare type KPReceiverOptionsObject = _KPReceiverOptionsObject;
+declare type VPReceiverOptionsObject = _VPReceiverOptionsObject;

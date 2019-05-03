@@ -1,5 +1,5 @@
 // @flow
-import {core, setup} from 'kaltura-player-js';
+import {core, setup} from 'vidiun-player-js';
 import {CastEngine} from './cast-engine';
 import {DefaultPlayerConfig} from './default-player-config';
 import {ReceiverError} from './error/error';
@@ -8,7 +8,7 @@ import {ErrorType} from './error/error-type';
 const {Utils, unRegisterEngine, registerEngine, EngineType} = core;
 
 export const CAST_MEDIA_PLAYER_TAG: string = 'cast-media-player';
-const PLAYER_CONTAINER: string = 'kaltura-receiver-player-container';
+const PLAYER_CONTAINER: string = 'vidiun-receiver-player-container';
 
 class PlayerLoader {
   static loadPlayer(config: Object): Object {

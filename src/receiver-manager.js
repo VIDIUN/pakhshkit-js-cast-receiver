@@ -1,5 +1,5 @@
 // @flow
-import {cast as remote, core} from 'kaltura-player-js';
+import {cast as remote, core} from 'vidiun-player-js';
 import {PlayerLoader} from './player-loader';
 import {ReceiverTracksManager} from './receiver-tracks-manager';
 import {ReceiverAdsManager} from './receiver-ads-manager';
@@ -7,7 +7,7 @@ import {ReceiverAdsManager} from './receiver-ads-manager';
 const {FakeEvent, EventManager, DrmScheme, Utils, getLogger} = core;
 const {CustomMessageType, CustomActionType, CustomActionMessage} = remote;
 
-export const CUSTOM_CHANNEL = 'urn:x-cast:com.kaltura.cast.playkit';
+export const CUSTOM_CHANNEL = 'urn:x-cast:com.vidiun.cast.pakhshkit';
 const LIVE_EDGE = -1;
 
 class ReceiverManager {

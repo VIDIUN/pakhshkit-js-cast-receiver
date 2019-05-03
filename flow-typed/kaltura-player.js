@@ -1,3 +1,3 @@
-declare module 'kaltura-player-js' {
+declare module 'vidiun-player-js' {
   declare module.exports: any;
 }

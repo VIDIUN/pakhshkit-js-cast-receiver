@@ -8,10 +8,10 @@ The following is the main structure of a basic receiver app, which has no custom
 <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
 ```
 
-2.  A script element to load the Kaltura Receiver Player SDK.
+2.  A script element to load the Vidiun Receiver Player SDK.
 
 ```html
-<script src="//cdnapisec.kaltura.com/p/{YOUR_PARTNER_ID}/embedPlaykitJs/uiconf_id/{UI_CONF_ID}"></script>
+<script src="//cdnapisec.vidiun.com/p/{YOUR_PARTNER_ID}/embedPakhshkitJs/uiconf_id/{UI_CONF_ID}"></script>
 ```
 
 3.  A `cast-media-player` element to represent the media player.
@@ -30,7 +30,7 @@ The following is the minimum code for a receiver application without any customi
 <head>
   <meta charset="UTF-8">
   <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
-  <script src="//cdnapisec.kaltura.com/p/{YOUR_PARTNER_ID}/embedPlaykitJs/uiconf_id/{UI_CONF_ID}"></script>
+  <script src="//cdnapisec.vidiun.com/p/{YOUR_PARTNER_ID}/embedPakhshkitJs/uiconf_id/{UI_CONF_ID}"></script>
 </head>
 <body>
 <cast-media-player/>
@@ -41,7 +41,7 @@ var conf = {
     uiConfId: {UI_CONF_ID} // receiver type
   }
 };
-var receiver = new KalturaPlayer.cast.receiver.Receiver(conf);
+var receiver = new VidiunPlayer.cast.receiver.Receiver(conf);
 receiver.start();
 </script>
 </body>

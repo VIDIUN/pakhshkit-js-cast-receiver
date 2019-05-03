@@ -2,7 +2,7 @@
 
 ### Table of Contents
 
-- [KPReceiverOptionsObject](#kpreceiveroptionsobject)
+- [VPReceiverOptionsObject](#vpreceiveroptionsobject)
 - [PKMediaSourceOptionsObject](#pkmediasourceoptionsobject)
 - [ProviderOptionsObject](#provideroptionsobject)
 - [PKStreamPriorityObject](#pkstreampriorityobject)
@@ -12,7 +12,7 @@
   - [addEventListener](#addeventlistener)
   - [removeEventListener](#removeeventlistener)
 
-## KPReceiverOptionsObject
+## VPReceiverOptionsObject
 
 Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
@@ -57,23 +57,23 @@ Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 ## PKMediaSourceOptionsObject
 
-See [PKMediaSourceOptionsObject](https://github.com/kaltura/playkit-js/blob/master/docs/configuration.md#type-pkmediasourceoptionsobject)
+See [PKMediaSourceOptionsObject](https://github.com/vidiun/pakhshkit-js/blob/master/docs/configuration.md#type-pkmediasourceoptionsobject)
 
 ## ProviderOptionsObject
 
-See [ProviderOptionsObject](https://github.com/kaltura/playkit-js-providers/blob/master/docs/configuration.md#configuration-structure)
+See [ProviderOptionsObject](https://github.com/vidiun/pakhshkit-js-providers/blob/master/docs/configuration.md#configuration-structure)
 
 ## PKStreamPriorityObject
 
-See [PKStreamPriorityObject](https://github.com/kaltura/playkit-js/blob/master/docs/configuration.md#type-arraypkstreampriorityobject)
+See [PKStreamPriorityObject](https://github.com/vidiun/pakhshkit-js/blob/master/docs/configuration.md#type-arraypkstreampriorityobject)
 
 ## Receiver
 
-Kaltura Receiver Player SDK.
+Vidiun Receiver Player SDK.
 
 **Parameters**
 
-- `config` **[KPReceiverOptionsObject](#kpreceiveroptionsobject)** The receiver SDK configuration.
+- `config` **[VPReceiverOptionsObject](#vpreceiveroptionsobject)** The receiver SDK configuration.
 
 ### Start
 

@@ -13,7 +13,7 @@
     "should": true,
     "sinon": true,
     "cast": true,
-    "KalturaPlayer": true,
+    "VidiunPlayer": true,
     "process": true,
     "__dirname": true,
     "__VERSION__": true,

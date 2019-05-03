@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
-  <script src="//192.168.2.3:3001/kaltura-ovp-player.js"></script>
-  <script src="./playkit-cast-receiver.js"></script>
+  <script src="//192.168.2.3:3001/vidiun-ovp-player.js"></script>
+  <script src="./pakhshkit-cast-receiver.js"></script>
 </head>
 <body>
 <cast-media-player/>
 <script>
-  var receiver = new KalturaPlayer.cast.receiver.Receiver({
+  var receiver = new VidiunPlayer.cast.receiver.Receiver({
     logLevel: 'DEBUG',
     provider: {
       partnerId: 1091,
       env: {
-        cdnUrl: 'http://qa-apache-php7.dev.kaltura.com/',
-        serviceUrl: 'http://qa-apache-php7.dev.kaltura.com/api_v3'
+        cdnUrl: 'http://qa-apache-php7.dev.vidiun.com/',
+        serviceUrl: 'http://qa-apache-php7.dev.vidiun.com/api_v3'
       }
     }
   });
